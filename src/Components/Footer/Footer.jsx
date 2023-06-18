@@ -8,7 +8,7 @@ import { FaFacebook, FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaPhoneAlt
 
 const Footer = () => {
     return (
-        <footer className='bg-[#016FFF] bg-no-repeat bg-bottom  md:pt-20 pb-32 md:pb-48 bg-footer'>
+        <div className='bg-[#016FFF] bg-no-repeat bg-bottom  md:pt-20 pb-32 md:pb-48 bg-footer'>
             <div className='container'>
                 <div className='py-5 border-b-2'>
                     <Image src={brangLogolight} alt='brangLogolight'></Image>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 };
 

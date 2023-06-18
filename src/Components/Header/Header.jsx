@@ -12,7 +12,7 @@ const Header = () => {
 
 
   return (
-    <header>
+    <div>
       <nav className="flex flex-col md:flex-row py-4 border-b-2 items-center justify-between px-5 md:px-24">
        <div className=" flex items-center">
        <Link href="/">
@@ -44,7 +44,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 };
 
