@@ -2,26 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container{
+  @apply max-w-full md:w-9/12 mx-auto md:px-0 px-4 md:py-0 py-8
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.productBG{
+  background-image: url("../assets/productBg/productBg-1.svg"), url("../assets/productBg/productbg-2.svg");
+  background-repeat: no-repeat,no-repeat;
+  background-position: top left, bottom right;
+}
+
+.bg-Effect{
+  background-color: rgb(20, 92, 197);
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.bg-Effect-two{
+  clip-path: polygon(0px 30%, 100% 0%, 100% 70%, 0px 100%);
+  background-color: rgb(65, 127, 218);
+
+  border-radius: 4px;
+
+  padding-top: 7vw;
+  padding-bottom: 3vw;
+}
+
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+  top: initial !important;
+  bottom: 0;
+  margin-top: 20px;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background: white !important;
+  border-radius:24px !important;
+
+}
+
+.chooseus-bg{
+  background-image: url('../assets/chooseus/bgImg.webp');
+}
+
+
+.bg-start-earning{
+  padding-top: 15vw;
+  padding-bottom: 5vw;
+  position: relative;
+  clip-path: polygon(0% 27%, 100% 0%, 100% 73%, 0% 100%);
+  background: rgb(10, 37, 64);
+}
+
+.bg-footer{
+  background-image: url("../assets/Footer/AboutUs.webp");
+}
+
+.aboutbg{
+  background-image: url("../assets//aboutus//OurMission.webp");
+}
+@media only screen and (max-width: 600px){
+	.bg-start-earning{
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    position: relative;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 89%, 0% 100%);
+    background: rgb(10, 37, 64);
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
 }
